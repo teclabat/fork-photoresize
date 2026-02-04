@@ -42,7 +42,7 @@
 
 %exception {
   try {
-    $function
+    $action
   } catch (const std::string &msg) {
     SWIG_exception(SWIG_RuntimeError, const_cast<char*>(msg.c_str()));
   } catch (...) {
